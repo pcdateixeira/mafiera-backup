@@ -1,6 +1,9 @@
+# Put avatars in another json document
+
 import urllib.request
 import re
 import json
+import utils
 from bs4 import BeautifulSoup
 
 threadUrl = "http://www.resetera.com/threads/conspiracy-mafia-ot-where-paranoia-is-part-of-the-flavour.73689/"
@@ -22,7 +25,7 @@ avatars = []
 
 for element in threadPage:
     if str(element).find("blockquote class=\"messageText") > 0:
-        texts.append(element.get_text())
+        texts.append(utils.validateText(str(element)))
         continue
 
     matchUsername = re.search(r'itemprop="name">(.+?)<\/a>', str(element)) # finds usernames
