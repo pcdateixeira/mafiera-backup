@@ -1,4 +1,5 @@
 # Put avatars in another json document
+# Add titles
 
 import urllib.request
 import re
@@ -6,7 +7,7 @@ import json
 import utils
 from bs4 import BeautifulSoup
 
-threadUrl = "http://www.resetera.com/threads/conspiracy-mafia-ot-where-paranoia-is-part-of-the-flavour.73689/"
+threadUrl = "https://www.resetera.com/threads/conspiracy-mafia-ot-where-paranoia-is-part-of-the-flavour.73689/page-2"
 
 req = urllib.request.Request(
     threadUrl,
