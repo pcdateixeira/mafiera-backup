@@ -1,4 +1,3 @@
-# Fix highlight
 
 import re
 

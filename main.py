@@ -1,5 +1,3 @@
-# Put avatars in another json document
-# Add titles
 
 import urllib.request
 import re
